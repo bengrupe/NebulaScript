@@ -44,17 +44,26 @@ function calculateSum(a, b) {
 
 ## 4. **Modules**
 
-Modules encapsulate data and functions, promoting organized code structure. Modules can be imported using the `!import` keyword:
+Modules encapsulate data and functions, promoting organized code structure. Modules can be defined within the same script file:
 
 ```c
+// Define the first module
 module mathOperations {
     function add(a, b) {
         return a + b;
     }
 }
 
-// Import using `!import` keyword
-!import("./mathOperations") as math;
+// Define the second module
+module stringOperations {
+    function concatenate(str1, str2) {
+        return str1 + str2;
+    }
+}
+
+// Now you can use functions from both modules
+@result1 = mathOperations.add(5, 10); // Result: 15
+@result2 = stringOperations.concatenate("Hello, ", "World!"); // Result: "Hello, World!"
 ```
 
 ### Best Practices for Modules:
