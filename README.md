@@ -37,8 +37,8 @@ NebulaScript variables are dynamic and can store values of different types:
 Functions are defined using the `function` keyword and can accept parameters of any data type. They can also return values of any type:
 
 ```c
-function calculateSum(a, b) {
-    return a + b;
+function calculateSum(@a, @b) {
+    return @a + @b;
 }
 ```
 
@@ -49,15 +49,15 @@ Modules encapsulate data and functions, promoting organized code structure. Modu
 ```c
 // Define the first module
 module mathOperations {
-    function add(a, b) {
-        return a + b;
+    function add(@a, @b) {
+        return @a + @b;
     }
 }
 
 // Define the second module
 module stringOperations {
-    function concatenate(str1, str2) {
-        return str1 + str2;
+    function concatenate(@str1, @str2) {
+        return @str1 + @str2;
     }
 }
 
