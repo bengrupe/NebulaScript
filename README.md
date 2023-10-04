@@ -27,10 +27,12 @@ NebulaScript employs dynamic typing, allowing variables to change types during r
 
 ## 2. **Variables**
 
-NebulaScript variables are dynamic and can store values of different types:
+NebulaScript variables can be mutable or immutable:
 
-- To define a local variable: `@variableName = 10;`
-- To define a global variable: `@@globalVariable = "Hello";`
+- To define a mutable local variable: `mut @variableName = 10;`
+- To define an immutable local variable: `@variableName = 10;`
+- To define a mutable global variable: `mut @@globalVariable = "Hello";`
+- To define an immutable global variable: `@@globalVariable = "Hello";`
 
 ## 3. **Functions**
 
