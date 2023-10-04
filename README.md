@@ -98,6 +98,7 @@ Structured error handling facilitates issue identification and resolution in Neb
 
 ```c
 try {
+    throw "bad-request"
     // code that might throw an error
 } catch (@error) {
     // handle the error
